@@ -41,13 +41,13 @@ O projeto aborda conceitos como:
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seuusuario/nome-do-projeto.git
+   git clone https://github.com/Samirabdellisola/C-Primeiro-Projeto---Alura.git
    ```
 
 2. Acesse a pasta do projeto:
 
    ```bash
-   cd nome-do-projeto
+   cd C-Primeiro-Projeto---Alura
    ```
 
 3. Compile e execute o projeto:
