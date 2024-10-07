@@ -57,13 +57,3 @@ O projeto aborda conceitos como:
    ```
 
 4. O programa irá iniciar no terminal, onde você poderá interagir com as opções do menu para gerenciar as bandas.
-
-## 🛠️ Como Contribuir
-
-Se você deseja contribuir com o projeto, siga os passos abaixo:
-
-1. Faça um fork do projeto
-2. Crie uma nova branch com sua funcionalidade/correção de bug: `git checkout -b minha-feature`
-3. Commit suas alterações: `git commit -m 'Adiciona nova funcionalidade'`
-4. Envie para o repositório remoto: `git push origin minha-feature`
-5. Abra um Pull Request
