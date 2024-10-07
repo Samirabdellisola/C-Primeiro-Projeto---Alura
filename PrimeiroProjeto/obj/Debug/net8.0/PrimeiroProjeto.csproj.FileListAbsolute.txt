@@ -12,3 +12,4 @@ C:\Users\Samir\source\repos\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net8.0\ref
 C:\Users\Samir\source\repos\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net8.0\PrimeiroProjeto.pdb
 C:\Users\Samir\source\repos\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net8.0\PrimeiroProjeto.genruntimeconfig.cache
 C:\Users\Samir\source\repos\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net8.0\ref\PrimeiroProjeto.dll
+C:\Users\Samir\source\repos\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net8.0\PrimeiroProjeto.sourcelink.json
