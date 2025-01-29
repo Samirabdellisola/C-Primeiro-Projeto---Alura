@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace PrimeiroProjeto.Modelos
 {
-    public class Musica
+    internal class Musica
     {
-        public Musica(Artista artista, string nome)
+        public Musica(Artista artista, Genero genero, string nome)
         {
             Artista = artista;
             Nome = nome;
+            Genero = genero;
         }
+
         public string Nome { get; }
         public Artista Artista { get; }
         public int Duracao { get; set; }

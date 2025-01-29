@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PrimeiroProjeto.Modelos
 {
-    public class Podcast
+    internal class Podcast
     {
         private List<Episodio> episodios = new List<Episodio>();
         public Podcast(string host, string nome)

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PrimeiroProjeto.Modelos
 {
-    public class Genero
+    internal class Genero
     {
         private List<Musica> musicas = new List<Musica>();
         public Genero(string nome)

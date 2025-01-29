@@ -1,11 +1,11 @@
 ﻿namespace PrimeiroProjeto.Modelos;
 
-public class Artista
+internal class Artista
 {
     private static int contadorId = 1;
     public int Id { get; set; }
     private List<Album> albums = new List<Album>();
-    private List<int> notas = new List<int>();
+    private List<Avaliacao> avaliacao = new List<Avaliacao>();
 
     public Artista(string nome)
     {
@@ -13,14 +13,21 @@ public class Artista
         Nome = nome;
     }
     public string Nome { get; }
-    public double Media => notas.Average();
+    public double Media
+    {
+        get
+        {
+            if (avaliacao.Count == 0) return 0;
+            else return avaliacao.Average(a => a.Nota);
+        }
+    }
     public void addAlbum(Album album)
     {
         albums.Add(album);
     }
-    public void addNota(int nota)
+    public void addNota(Avaliacao avaliacao)
     {
-        notas.Add(nota);
+        this.avaliacao.Add(avaliacao);
     }
     public void exibirDiscografia()
     {

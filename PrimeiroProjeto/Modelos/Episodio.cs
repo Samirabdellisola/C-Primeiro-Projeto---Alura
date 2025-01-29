@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PrimeiroProjeto.Modelos
 {
-    public class Episodio
+    internal class Episodio
     {
         private List<string> convidados = new List<string>();
         public Episodio(string titulo)
