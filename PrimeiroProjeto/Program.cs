@@ -73,7 +73,7 @@ void ExibirOpcoesMenu()
             ListarArtistas();
             break;
         case 4:
-            AvaliarBanda();
+            AvaliarArtista();
             break;
         case 5:
             ExibirDetalhes();
@@ -144,13 +144,19 @@ void ListarArtistas()
     ExibirOpcoesMenu();
 }
 
-void AvaliarBanda()
+void AvaliarArtista()
 {
     Console.Clear();
     ExibirTituloDaOpcao("Avaliar artistas");
+    Console.Write("[ Digite 0 para voltar ]\n\n");
     Console.WriteLine("\nDigite o nome da artista que deseja avaliar:");
     string nomeArtista = Console.ReadLine()!;
-    if (artistasRegistrados.ContainsKey(nomeArtista))
+    if (nomeArtista == "0")
+    {
+        Console.Clear();
+        ExibirOpcoesMenu();
+    }
+    else if (artistasRegistrados.ContainsKey(nomeArtista))
     {
         Console.WriteLine($"Digite uma nota para {nomeArtista}:");
         int nota;
@@ -178,10 +184,9 @@ void AvaliarBanda()
     else
     {
         Console.WriteLine($"\nA artista {nomeArtista} não foi encontrada");
-        Console.WriteLine("\nAperte qualquer tecla para voltar ao menu");
-        Console.ReadKey();
+        Thread.Sleep(2000);
         Console.Clear();
-        ExibirOpcoesMenu();
+        AvaliarArtista();
     }
 
 

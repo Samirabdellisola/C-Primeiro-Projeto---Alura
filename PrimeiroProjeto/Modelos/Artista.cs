@@ -2,11 +2,14 @@
 
 public class Artista
 {
+    private static int contadorId = 1;
+    public int Id { get; set; }
     private List<Album> albums = new List<Album>();
     private List<int> notas = new List<int>();
 
     public Artista(string nome)
     {
+        Id = contadorId++;
         Nome = nome;
     }
     public string Nome { get; }
